@@ -1,0 +1,126 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --dark_cyan: hsl(185, 75%, 39%);
+    --very_dark: hsl(229, 23%, 23%);
+    --gray_blue: hsl(227, 10%, 46%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Kumbh Sans',
+        sans-serif;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark_cyan);
+    display: flex;
+    position: fixed;
+}
+
+.paterntop {
+    top: -450px;
+    left: -300px;
+    position: absolute;
+}
+
+.paternbot {
+    right: -300px;
+    bottom: -740px;
+    position: absolute;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    background-color: whitesmoke;
+    z-index: 1;
+    justify-content: space-between;
+    border-radius: 14px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h4 {
+    color: var(--very_dark);
+}
+
+.card .lon,
+.card span {
+    color: var(--gray_blue);
+    font-size: 0.7em;
+    padding: 10px 0px 15px 0px;
+}
+
+.patterncard {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    margin-bottom: 70px;
+}
+
+
+.card .profil {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 80px;
+    position: absolute;
+    margin-top: 95px;
+    cursor: pointer;
+}
+
+.card .follow {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    border-top: 0.1px solid rgb(216, 216, 216);
+    padding: 25px 0px 25px 0px;
+}
+
+.follow .foll {
+    text-align: center;
+}
+
+.foll h3 {
+    font-size: 18px;
+    color: var(--gray_dark);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.follow .foll p {
+    color: var(--gray_blue);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.attribution {
+    text-align: center;
+    bottom: 0px;
+    position: relative;
+    color: white;
+}
+
+.attribution a {
+    color: rgb(34, 126, 118);
+    text-decoration: none;
+}
+
+@media(max-width:900px) {
+    .paterntop {
+        top: -450px;
+        left: -700px;
+        position: absolute;
+    }
+
+    .paternbot {
+        right: -700px;
+        bottom: -740px;
+        position: absolute;
+    }
+}
